@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q6</title>
+    <link rel="stylesheet" href="Q6.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h2 class="title">Student Registration Form</h2>
+
+        <form action="" class="form" id="form-registration">
+            <div>
+                <label class="lable_block"> Firstname:</label>
+                <input class="input input_fName" type="text" name="firstname" placeholder="Firstname" />
+                <div class="error error_Firstname"></div>
+            </div>
+            <div>
+                <label class="lable_block">Middlename:</label>
+                <input class="input" type="text" name="middlename" placeholder="Middlename" />
+            </div>
+            <div>
+                <label class="lable_block">Lastname:</label>
+                <input class="input" type="text" name="lastname" placeholder="Lastname" />
+                <div class="error"></div>
+            </div>
+            <div class="course">
+                <label class="lable_block">Course:</label>
+                <select id="course" name="Course">
+                    <option value="course 1">Course </option>
+                    <option value="course 2">Course 2</option>
+                    <option value="course 3">Course 3</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div>
+                <span class="Radio_title lable_block">Gender:</span>
+                <div class="section_radio">
+                    <input type="radio" id="male" name="gender" value="male" checked />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div>
+                <label class="lable_block">Phone:</label>
+                <input class="input input_phone" class="phone_code" type="text" name="phone_code" value="+91" />
+                <input class="input" type="tel" placeholder="phone no" name="phone" />
+                <div class="error error_phone"></div>
+            </div>
+            <div>
+                <label class="lable_block">Current Address:</label>
+                <textarea name="address" cols="30" rows="10" placeholder="Current Address"></textarea>
+                <div class="error"></div>
+            </div>
+            <div class="email-label">
+                <label class="lable_block"><strong>Email:</strong></label>
+                <input class="input" type="text" placeholder="Enter Email" name="email" />
+                <div class="error"></div>
+            </div>
+            <div class="pass-label">
+                <label class="lable_block"><strong>Password:</strong></label>
+                <input class="input" type="password" placeholder="Enter Password" name="password" />
+                <div class="error"></div>
+            </div>
+            <div class="retype-label">
+                <label class="lable_block"><strong>Re-type Password:</strong></label>
+                <input class="input" type="password" placeholder="Retype Password" name="retype_pass" id="pass_check" />
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="submit">Register</button>
+        </form>
+    </main>
+    <script src="Q6.js"></script>
+</body>
+
+</html>
